@@ -9,14 +9,13 @@ html {
 }
 
 body {
-	user-select : none;
 	padding : 0px;
 	margin : 0px;
 	overflow-x : hidden;
 	width : 100vw;
 	height : auto;
-	min-height : 100vh;
 	background-color : #f7d794;
+	min-height : 100vh;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -51,3 +50,21 @@ li {
 
 }
 
+.menu li a {
+	text-decoration : none;
+	color : black;
+}
+
+.content {
+	width : 100vw;
+	height : auto;
+	min-height : 100vh;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+
+.judul{
+	font-size : 32pt;
+	margin-right : 20px;
+}
