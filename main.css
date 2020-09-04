@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Unica+One&display=swap');
+
+html {
+	scroll-behavior : smooth;
+}
+
+* {
+	box-sizing : border-box;	
+}
+
+body {
+	user-select : none;
+	padding : 0px;
+	margin : 0px;
+	overflow-x : hidden;
+	width : 100vw;
+	height : auto;
+	min-height : 100vh;
+	background-color : #f7d794;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.navbar {
+	width : 100vw;
+	height : 10vh;
+	background-color : white;
+	box-shadow : 5px 5px 8px rgba( 0, 0, 0, 0.200 );
+	padding-left : 10%;
+	padding-right : 10%;
+	display : flex;
+	align-items : center;
+}
+
+.brand {
+	font-family: 'Unica One', cursive;
+	font-size : 32pt;
+	color : #fd79a8;
+}
+
+.menu {
+	list-style-type : none;
+	display : flex;
+	margin-left : auto;
+}
+
+li {
+	margin-left : 50px;
+
+}
+
