@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="figma to frontend">
+    <title>Figma to Frontend</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+
+         <span class="material-icons menuIcons" onclick="hide()">
+            menu
+        </span>
+
+        <div class="brand">JVLY</div>
+
+        <div class="menu">
+            <a href="/" class="menuItems">HOME</a>
+            <a href="/about.html" class="menuItems">ABOUT ME</a>
+            <a href="/showcase.html" class="menuItems">SHOWCASE</a>
+            <a href="/contact.html" class="menuItems">CONTACT</a>
+        </div>
+
+       
+    </nav>
+
+
+<script>
+
+    var menu = document.querySelector('.menu')
+
+    const hide = ()=>{
+        const rr = menu.style.right
+        console.log(rr)
+        
+        if(rr === '0px'){
+            menu.style.right = "-210px"
+        }else{
+            menu.style.right = "0px"
+        }
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
