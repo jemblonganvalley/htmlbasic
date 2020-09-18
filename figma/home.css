@@ -61,9 +61,7 @@ body{
     
     .menuIcons{
         font-size: 30px;
-        position: absolute;
-        left: 20px;
-        /* margin-right: auto; */
+        margin-left: auto;
     }
 
    
