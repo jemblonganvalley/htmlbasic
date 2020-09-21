@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let isLogin = sessionStorage.getItem('isLogin')
+        if(!isLogin){
+            window.location.href = 'index.html'
+        }
+    </script>
+
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="welcome home">
+    <title>Home Page</title>
+</head>
+<body>
+    
+    <main class="container">
+        <h3>Selamat datang</h3>
+        <h1 class="userLogin" id='userLogin'></h1>
+        <button onclick="logout()">logout</button>
+    </main>
+
+
+<script>
+    //mendapatkan username yang telah login
+    let userLogin = sessionStorage.getItem('username')
+
+    //inject data ke DOM / HTML
+    let h1 = document.getElementById('userLogin')
+    h1.innerHTML += userLogin
+
+</script>
+
+<script src="./main.js"></script>
+
+</body>
+</html>

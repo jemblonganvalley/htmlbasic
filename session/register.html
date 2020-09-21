@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script>
+        let isLogin = sessionStorage.getItem('isLogin')
+        if(isLogin){
+            window.location.href = 'home.html'
+        }
+    </script>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+    <main class="container">
+
+         <h1 class="title">Register</h1>
+        <form class="login" onsubmit="register()" action='index.html'>
+
+            <div class="formGroup">
+                <label for="username">username</label>
+                <input type="text" name="username" id='username' required >
+            </div>
+
+            <div class="formGroup">
+                <label for="email">email</label>
+                <input type="email" name="email" id='email' required >
+            </div>
+
+            <div class="formGroup">
+                <label for="password">password</label>
+                <input type="password" name="password" id='password' required >
+            </div>
+
+            <button class="btnRegister" type='submit'>Register</button>
+
+        </form>
+            <a href="index.html">sudah ada akun ?</a>
+
+    </main>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
