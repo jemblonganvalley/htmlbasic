@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: ghostwhite;
+    user-select: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.modalMenu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.800);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+
+}
+
+.modalMenu a{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.modalMenu a:hover{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: orange;
+}
+
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000;
+    padding: 0 10%;
+}
+
+.brand{
+    font-size: 3rem;
+    color: white;
+    font-weight: 200;
+}
+
+.menuIcon{
+    color: #ffff;
+    font-size: 2rem;
+    margin-left: auto;
+}
+
+.menuIcon:hover{
+    color: orange;
+}
+
+.closeIcon{
+    font-size: 2rem;
+    color: orangered;
+    position: fixed;
+    top : 20vh;
+    right: 10vw;
+}
+
+.closeIcon:hover{
+    font-size: 3rem;
+    
+}
