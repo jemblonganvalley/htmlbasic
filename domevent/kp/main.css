@@ -62,6 +62,7 @@ a{
     padding: 0 10%;
     position: fixed;
     top: 0;
+    z-index : 100;
 }
 
 .brand{
@@ -98,19 +99,45 @@ a{
     height: auto;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .home{
-    background-image: url(https://picsum.photos/seed/13/900);
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.heroImage{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px 20px 20px 250px;
+    object-fit: cover;
+    object-position: center;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.heroText{
+    color: #ffff;
+    font-size: 6rem;
+    animation-name: anim;
+    animation-duration: 1s;
 }
 
 .about{
     background-image: url(https://picsum.photos/seed/11/900);
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 .gallery{
@@ -172,4 +199,29 @@ a{
     outline: none;
     border-radius: 20px;
 
+}
+
+.aboutAlert{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: orange;
+    color: white;
+    position: sticky;
+    top: 10vh;
+    left: 0;
+}
+
+@keyframes anim{
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
 }

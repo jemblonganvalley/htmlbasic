@@ -18,13 +18,12 @@
             onclick="closeModal()"
         > close </span>
 
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
-        <a href="#showcase">showcase</a>
+        <a href="#home" onclick="closeModal()">home</a>
+        <a href="#about" onclick="closeModal()">about</a>
+        <a href="#contact" onclick="closeModal()">contact</a>
+        <a href="#showcase" onclick="closeModal()">showcase</a>
 
     </div>
-
 
     <nav class="navbar">
 
@@ -33,10 +32,28 @@
 
     </nav>
 
-    <main class="container" id="home">
+    <main class="container">
+
+        <section class="home" id="home">
+            <h1 class="title">HOME</h1>
+        </section>
+
+        <section class="about" id="about">
+            <span class="alertAbout">
+                Selamat datang di web sederhana saya ini..
+            </span>
+            <h1 class="title">about</h1>
+        </section>
+
+        <section class="showcase" id="showcase">
+            <h1 class="title">showcase</h1>
+        </section>
+
+        <section class="contact" id='contact'>
+            <h1 class="title">contact</h1>
+        </section>
 
     </main>
-
 
 
 

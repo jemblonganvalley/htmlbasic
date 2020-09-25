@@ -22,3 +22,9 @@ const hideModal = ()=>{
     //jadikan dia tersembunyi
     modal.style.display = 'none'
 }
+
+const closeAlert = ()=>{
+    let aboutAlert = document.querySelector('.aboutAlert')
+
+    aboutAlert.style.display = 'none'
+}

@@ -28,6 +28,10 @@ body{
     align-items: center;
     padding: 0 10%;
     background-color: #bebebe;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .brand{
@@ -51,6 +55,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    z-index: 200;
 }
 
 .closeIcon{
@@ -78,3 +83,56 @@ body{
     color: orange;
     font-size: 2.2rem;
 }
+
+.container{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+}
+
+.container section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    background-image: url(https://picsum.photos/seed/13/900);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about{
+    background-image: url(https://picsum.photos/seed/15/900);
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+
+.showcase{
+    background-image: url(https://picsum.photos/seed/17/900);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact{
+    background-image: url(https://picsum.photos/seed/19/900);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.alertAbout{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    position: sticky;
+    top: 10vh;
+}
+
