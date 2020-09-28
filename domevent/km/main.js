@@ -12,7 +12,7 @@ const showModal = ()=>{
     modal.style.display = 'flex'
 
 }
-`1  q`
+
 const closeModal = ()=>{
   //kita dapatkan element MODAL
     //yang mau di munculkan

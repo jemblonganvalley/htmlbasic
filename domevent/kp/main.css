@@ -38,7 +38,7 @@ a{
     align-items: center;
     color: white;
     gap: 20px;
-
+    z-index: 200;
 }
 
 .modalMenu a{
@@ -118,19 +118,23 @@ a{
     height: 350px;
     border-radius: 20px 20px 20px 250px;
     object-fit: cover;
-    object-position: center;
-    animation-name: anim;
-    animation-duration: 1s;
-    animation-delay: .3s;
     opacity: 0;
+    object-position: center;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
 }
 
 .heroText{
     color: #ffff;
     font-size: 6rem;
-    animation-name: anim;
+    opacity: 0;
+    animation-name: bottomToTop;
     animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .about{
@@ -142,6 +146,17 @@ a{
 
 .gallery{
     background-image: url(https://picsum.photos/seed/28/900);
+    justify-content: center;
+    align-items: center;
+}
+
+.galIcon{
+    font-size: 8rem;
+    color: white;
+    animation-name: infRotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .contact{
@@ -215,13 +230,26 @@ a{
     left: 0;
 }
 
-@keyframes anim{
+
+
+@keyframes bottomToTop{
     from{
-        transform: translateY(200px);
+        transform: translateY(20vh);
         opacity: 0;
     }
     to{
-        transform: translate(0);
+        transform: translateY(0);
         opacity: 1;
     }
+}
+
+@keyframes infRotate{
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
 }

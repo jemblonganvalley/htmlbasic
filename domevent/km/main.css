@@ -99,9 +99,34 @@ body{
 }
 
 .home{
-    background-image: url(https://picsum.photos/seed/13/900);
+    /* background-image: url(https://picsum.photos/seed/13/900); */
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
+    gap: 40px;
+}
+
+.homeImage{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 200px 200px 20px 200px;
+    border: 12px solid orange;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.homeText{
+    font-size: 8rem;
+    color: orange;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .about{
@@ -116,6 +141,15 @@ body{
     background-image: url(https://picsum.photos/seed/17/900);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.rotateIcon{
+    font-size: 4rem;
+    color: orange;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .contact{
@@ -136,3 +170,22 @@ body{
     top: 10vh;
 }
 
+@keyframes bottomToTop{
+    from{
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
